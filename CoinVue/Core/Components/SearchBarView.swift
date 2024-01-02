@@ -20,6 +20,8 @@ struct SearchBarView: View {
             
             TextField("Search by name or symbol...", text: $searchText)
                 .foregroundStyle(Color.theme.acccent)
+                .keyboardType(.alphabet)
+                .disableAutocorrection(true)
                 .overlay(
                     Image(systemName: "xmark.circle.fill")
                         .padding()
@@ -28,6 +30,7 @@ struct SearchBarView: View {
                         .opacity(searchText.isEmpty ? 0 : 1.0)
                         .animation(.easeIn(duration: 0.25), value: searchText.isEmpty)
                         .onTapGesture {
+                            UIApplication.shared.endEditing()
                             searchText = ""
                         }
                     
