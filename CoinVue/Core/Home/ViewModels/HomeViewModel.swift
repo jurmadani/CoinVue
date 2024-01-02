@@ -7,11 +7,14 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 final class HomeViewModel : ObservableObject {
     
     @Published var allCoins : [CoinModel] = []
     @Published var portofolioCoins: [CoinModel] = []
+    
+
     
     private let dataService = CoinDataService()
     private var cancellables = Set<AnyCancellable>()
