@@ -15,6 +15,8 @@ struct HomeView: View {
     @State private var selectedCoin: CoinModel? = nil
     @State private var showDetailView: Bool = false
     
+    @State private var showSettingsView: Bool = false // new sheet
+    
     @EnvironmentObject private var vm : HomeViewModel
     
     var body: some View {
@@ -28,7 +30,7 @@ struct HomeView: View {
                 })
             
             //content layer
-            VStack{
+            VStack {
                 homeHeader
 
                 HomeStatsView(showPortofolio: $showPortfolio)
@@ -52,6 +54,9 @@ struct HomeView: View {
                
                 Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
             }
+            .sheet(isPresented: $showSettingsView, content: {
+                SettingsView()
+            })
         }
         .background(
             NavigationLink(
@@ -82,6 +87,8 @@ extension HomeView {
                 .onTapGesture {
                     if showPortfolio {
                         showPortofolioView.toggle()
+                    } else {
+                        showSettingsView.toggle()
                     }
                 }
             

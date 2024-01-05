@@ -12,7 +12,7 @@ struct SettingsView: View {
     let defaultURL = URL(string: "https://www.google.com")!
     let youtubeURL = URL(string: "https://www.youtube.com/c/swiftfulthinking")!
     let coffeeURL = URL(string: "https://www.buymeacoffee.com/djurma")!
-    let coingeckoURL = URL(string: "httpps://www.coingecko.com")!
+    let coingeckoURL = URL(string: "https://www.coingecko.com")!
     let personalURL = URL(string: "https://jurma.dev")!
     
     var body: some View {
