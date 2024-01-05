@@ -45,6 +45,8 @@
 		17C9B7C32B40AE05008EEAE3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C9B7C22B40AE05008EEAE3 /* HomeViewModel.swift */; };
 		17C9B7C62B40B2C2008EEAE3 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C9B7C52B40B2C2008EEAE3 /* CoinDataService.swift */; };
 		17E2E12C2B4891B10005DBBB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E2E12B2B4891B10005DBBB /* SettingsView.swift */; };
+		17E2E1302B489A090005DBBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E2E12F2B489A090005DBBB /* LaunchScreen.storyboard */; };
+		17E2E1322B489CE80005DBBB /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E2E1312B489CE80005DBBB /* LaunchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +89,8 @@
 		17C9B7C22B40AE05008EEAE3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		17C9B7C52B40B2C2008EEAE3 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		17E2E12B2B4891B10005DBBB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		17E2E12F2B489A090005DBBB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		17E2E1312B489CE80005DBBB /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				17C9B7B32B4094B6008EEAE3 /* Components */,
+				17E2E12D2B4899EF0005DBBB /* Launch */,
 				17C9B7AE2B4093CE008EEAE3 /* Home */,
 				17915DAF2B46FFDF002F1206 /* Detail */,
 				17E2E1292B4891750005DBBB /* Settings */,
@@ -305,6 +310,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		17E2E12D2B4899EF0005DBBB /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				17E2E12E2B4899F70005DBBB /* Views */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		17E2E12E2B4899F70005DBBB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17E2E12F2B489A090005DBBB /* LaunchScreen.storyboard */,
+				17E2E1312B489CE80005DBBB /* LaunchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -364,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17C9B7A42B408F13008EEAE3 /* Preview Assets.xcassets in Resources */,
+				17E2E1302B489A090005DBBB /* LaunchScreen.storyboard in Resources */,
 				1770355D2B44952D00D45F63 /* data.json in Resources */,
 				17C9B7A12B408F13008EEAE3 /* Assets.xcassets in Resources */,
 			);
@@ -401,6 +424,7 @@
 				17915DB32B47003D002F1206 /* DetailView.swift in Sources */,
 				1770354F2B4160BE00D45F63 /* NetworkingManager.swift in Sources */,
 				17C9B7B82B409762008EEAE3 /* CircleButtonAnimationView.swift in Sources */,
+				17E2E1322B489CE80005DBBB /* LaunchView.swift in Sources */,
 				17915DAE2B45EBDB002F1206 /* PortofolioDataService.swift in Sources */,
 				17915DBB2B473EC6002F1206 /* ChartView.swift in Sources */,
 				177035652B44A86300D45F63 /* HomeStatsView.swift in Sources */,
@@ -541,6 +565,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoinVue/Preview Content\"";
@@ -551,6 +576,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -574,6 +600,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoinVue/Preview Content\"";
@@ -584,6 +611,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
